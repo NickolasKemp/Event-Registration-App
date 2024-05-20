@@ -14,6 +14,12 @@ Clone the project
   git clone https://github.com/NickolasKemp/React-App.git
 ```
 
+Run database
+
+```bash
+  docker compose -f docker-compose.dev.yaml --env-file=.env.dev up -d
+```
+
 Go to the project directories
 
 ```bash
