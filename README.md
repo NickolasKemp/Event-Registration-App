@@ -27,6 +27,6 @@ Generate prisma client and seed data
 Start the backend server and frontend servers
 
 ```bash
-  pnpm run start:all
+  pnpm start:all
 ```
 
