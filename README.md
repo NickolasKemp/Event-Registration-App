@@ -6,7 +6,7 @@ Clone the project
   git clone https://github.com/NickolasKemp/Event-Registration-App.git
 ```
 
-Install dependencies from root directory (if you do no have pnpm manager install it with `npm install -g pnpm`)
+Install dependencies from root directory (if you do no have pnpm manager, install it with `npm install -g pnpm`)
 
 ```bash
   pnpm install:all
