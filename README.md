@@ -45,14 +45,9 @@ Push tables to db
   npx prisma db push
 ```
 
-Start the backend server
+Start the backend server and frontend servers
 
 ```bash
-  npm run start:dev
+  pnpm run start:all
 ```
 
-Start the frontend server
-
-```bash
-  npm start
-```
