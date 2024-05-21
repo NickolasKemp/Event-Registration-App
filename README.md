@@ -1,64 +1,32 @@
-## Todo: correct running-project intructions 
-
-
-## Run using Docker
-
-```bash
-  docker-compose up --build
-```
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/NickolasKemp/React-App.git
+  git clone https://github.com/NickolasKemp/Event-Registration-App.git
 ```
 
-Run database
+Install dependencies from root directory (if you do not have pnpm package manager, install it with `npm install -g pnpm`)
+
+```bash
+  pnpm install:all
+```
+
+Up database
 
 ```bash
   docker compose -f docker-compose.dev.yaml --env-file=.env.dev up -d
 ```
 
-Go to the project directories
+Generate prisma client and seed data
 
 ```bash
-  cd React-App/backend
-  cd React-App/frontend
+  pnpm prisma:backend
 ```
 
-Install dependencies
+Start the backend server and frontend servers
 
 ```bash
-  npm install
+  pnpm start:all
 ```
 
-Create and configure .env file in backend directory 
-
-```bash
-DATABASE_URL="postgresql://user:password@host:port/database_name?schema=public"
-```
-
-Generate prisma client
-
-```bash
-  npx prisma generate
-```
-
-Push tables to db
-
-```bash
-  prisma db push
-```
-
-Start the backend server
-
-```bash
-  npm run start:dev
-```
-
-Start the frontend server
-
-```bash
-  npm start
-```
