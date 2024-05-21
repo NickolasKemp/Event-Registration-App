@@ -24,7 +24,7 @@ Generate prisma client and seed data
   pnpm prisma:backend
 ```
 
-Start the backend server `port: 3005`  and frontend server `port 5173`
+Start the backend server `port: 3005`  and frontend server `port: 5173`
 
 ```bash
   pnpm start:all
