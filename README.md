@@ -14,12 +14,6 @@ Clone the project
   git clone https://github.com/NickolasKemp/React-App.git
 ```
 
-Run database
-
-```bash
-  docker compose -f docker-compose.dev.yaml --env-file=.env.dev up -d
-```
-
 Go to the project directories
 
 ```bash
@@ -27,16 +21,16 @@ Go to the project directories
   cd React-App/frontend
 ```
 
-Install dependencies
+Install dependencies from root directory (if you do no have pnpm manager install it with `npm install -g pnpm`)
 
 ```bash
-  npm install
+  pnpm install:all
 ```
 
-Create and configure .env file in backend directory 
+Up database
 
 ```bash
-DATABASE_URL="postgresql://user:password@host:port/database_name?schema=public"
+  docker compose -f docker-compose.dev.yaml --env-file=.env.dev up -d
 ```
 
 Generate prisma client
@@ -48,7 +42,7 @@ Generate prisma client
 Push tables to db
 
 ```bash
-  prisma db push
+  npx prisma db push
 ```
 
 Start the backend server
