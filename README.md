@@ -12,7 +12,7 @@ Install dependencies from root directory (if you do not have pnpm package manage
   pnpm install:all
 ```
 
-Up database
+Up database with Docker (ensure that `port 5432` is free)
 
 ```bash
   docker compose -f docker-compose.dev.yaml --env-file=.env.dev up -d
