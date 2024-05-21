@@ -5,6 +5,9 @@ export class ParticipantDto {
   id: string;
 
   @IsString()
+  createdAt: string;
+
+  @IsString()
   firstName: string;
 
   @IsString()

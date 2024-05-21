@@ -31,6 +31,7 @@ export class EventService {
   findOne(id: string) {
     return this.prisma.event.findUnique({
       where: { id: id },
+      include: {participants: true}
     });
   }
 
