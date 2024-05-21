@@ -1,11 +1,3 @@
-## Todo: correct running-project intructions 
-
-
-## Run using Docker
-
-```bash
-  docker-compose up --build
-```
 ## Run Locally
 
 Clone the project
