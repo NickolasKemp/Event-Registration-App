@@ -11,14 +11,7 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/NickolasKemp/React-App.git
-```
-
-Go to the project directories
-
-```bash
-  cd React-App/backend
-  cd React-App/frontend
+  git clone https://github.com/NickolasKemp/Event-Registration-App.git
 ```
 
 Install dependencies from root directory (if you do no have pnpm manager install it with `npm install -g pnpm`)
