@@ -26,16 +26,10 @@ Up database
   docker compose -f docker-compose.dev.yaml --env-file=.env.dev up -d
 ```
 
-Generate prisma client
+Generate prisma client and seed data
 
 ```bash
-  npx prisma generate
-```
-
-Push tables to db
-
-```bash
-  npx prisma db push
+  pnpm prisma:backend
 ```
 
 Start the backend server and frontend servers
